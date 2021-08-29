@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+// import Grid from "@material-ui/core/Grid";
+import { Grid } from "@material-ui/core"; //This is eqivalent to the above line.
+import Header from "./components/Header";
+import Content from "./components/Content";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grid container direction="column" spacing={4}>
+      <Grid item>
+        <Header />
+      </Grid>
+      <Grid item container>
+        <Grid item xs={0} sm={2} />
+        <Grid item container direction="row" xs={12} sm={8}>
+          <Content />
+        </Grid>
+        <Grid item xs={0} sm={2} />
+      </Grid>
+    </Grid>
   );
 }
 
