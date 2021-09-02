@@ -1,7 +1,7 @@
+//export default
 
 
-
-export default [
+export const ConstantData = [
   {
     name: "dragon donkey",
     picture:
