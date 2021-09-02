@@ -36,7 +36,10 @@ const Header = () => {
           <Typography variant="h6" className={classes.title}>
             Area 51
           </Typography>
-          <AndroidOutlinedIcon />
+          <IconButton>
+            <AndroidOutlinedIcon />
+          </IconButton>
+
           <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>

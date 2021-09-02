@@ -13,15 +13,7 @@ function App() {
       <Grid item container>
         <Grid item xs={false} sm={2} />
         <Grid item container direction="row" xs={12} sm={8} spacing={2}>
-          <Grid item xs={false} sm={4}>
-            <Fcard />
-          </Grid>
-          <Grid item xs={false} sm={4}>
-            <Fcard />
-          </Grid>
-          <Grid item xs={false} sm={4}>
-            <Fcard />
-          </Grid>
+            <Content />
         </Grid>
         <Grid item xs={false} sm={2} />
       </Grid>
