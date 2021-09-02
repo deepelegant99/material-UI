@@ -1,11 +1,22 @@
 import { Grid } from "@material-ui/core";
 import Fcard from "./Fcard";
-import Constant from "./Constant";
+import {ConstantData} from "./Constant";
 const Content = () => {
 
-  
+
   return(
-    <h1>Testing Testing</h1>
+    <>
+      
+  {ConstantData.map((data, key) => {
+    return (
+      <div key={key}>
+        {data.name}+
+          <img src={data.picture} width="500px" height="500px"/>
+           {data.description}
+      </div>
+    );
+  })}
+    </>
   )
 };
 
