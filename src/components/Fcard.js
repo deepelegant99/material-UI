@@ -21,7 +21,7 @@ const useStyles = makeStyles({
 const Fcard = props => {
 
   const {name, picture, description} = props;
-  console.log(name, picture, description)
+  
   const classes = useStyles();
   return (
     <Card className={classes.root}>
